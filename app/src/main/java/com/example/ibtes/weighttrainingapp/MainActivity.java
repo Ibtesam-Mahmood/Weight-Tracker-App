@@ -3,6 +3,7 @@ package com.example.ibtes.weighttrainingapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         TextView newText =  new TextView(this);
         newText.setText(currentText); //Sets the text to the inputted text
-        newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Stes the text size to 24 sp
+        newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Sets the text size to 24 sp
+        newText.setGravity(Gravity.CENTER); //Centers the text
         newText.setLayoutParams(params); //Sets the parameters for the text view
 
         layout.addView(newText); //Adds the text t the layout
