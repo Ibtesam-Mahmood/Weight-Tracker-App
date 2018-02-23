@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Weight Training App</string>
+    <string name="app_name">Weight Management</string>
+    <string name="Button_Text">Add</string>
 </resources>
