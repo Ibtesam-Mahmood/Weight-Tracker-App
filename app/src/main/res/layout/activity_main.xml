@@ -17,7 +17,7 @@
     </ScrollView>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/inputText"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
