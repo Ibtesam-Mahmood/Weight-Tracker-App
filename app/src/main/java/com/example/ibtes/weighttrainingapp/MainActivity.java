@@ -2,6 +2,7 @@ package com.example.ibtes.weighttrainingapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         String currentText =  editText.getText().toString();
 
         //Insures the logic only runs if the edit text was not initially empty
-        if(currentText == "")
+        if(currentText.isEmpty())
             return;
 
         editText.setText(""); //Resets the edit text
@@ -49,4 +50,6 @@ public class MainActivity extends AppCompatActivity {
         layout.addView(newText); //Adds the text t the layout
 
     }
+
+
 }
