@@ -45,14 +45,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(isNumeric(currentText)){
-            TextView newText =  new TextView(this);
+//            TextView newText =  new TextView(this);
+//
+//            newText.setText(currentText); //Sets the text to the inputted text
+//            newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Sets the text size to 24 sp
+//            newText.setGravity(Gravity.CENTER); //Centers the text
+//            newText.setLayoutParams(params); //Sets the parameters for the text view
+//
+//            layout.addView(newText); //Adds the text t the layout
 
-            newText.setText(currentText); //Sets the text to the inputted text
-            newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Sets the text size to 24 sp
-            newText.setGravity(Gravity.CENTER); //Centers the text
-            newText.setLayoutParams(params); //Sets the parameters for the text view
-
-            layout.addView(newText); //Adds the text t the layout
+            WeightText weight = new WeightText(this, currentText);
+            layout.addView(weight);
         }
         else{
             Toast.makeText(this, "Not numeric", Toast.LENGTH_SHORT).show();
