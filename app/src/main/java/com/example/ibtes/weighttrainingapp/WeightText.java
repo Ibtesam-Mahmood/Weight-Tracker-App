@@ -7,6 +7,9 @@ import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by User on 3/7/2018.
  */
@@ -30,7 +33,9 @@ public class WeightText extends AppCompatTextView {
         setGravity(Gravity.CENTER); //Centers the text
 
 
-        setText(weight + " kg");
+        String dateFormat =  new SimpleDateFormat("yyyy/MM/dd").format(new Date());
+
+        setText(weight + " kg on " + dateFormat);
 
     }
 
