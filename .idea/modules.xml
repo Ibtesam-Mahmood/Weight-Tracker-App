@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WeightTrainingApp.iml" filepath="$PROJECT_DIR$/WeightTrainingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Weight-Tracker-App.iml" filepath="$PROJECT_DIR$/Weight-Tracker-App.iml" />
+      <module fileurl="file://C:\Users\User\Documents\Android\Weight-Tracker-App\WeightTrainingApp.iml" filepath="C:\Users\User\Documents\Android\Weight-Tracker-App\WeightTrainingApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\User\Documents\Android\Weight-Tracker-App\app\app.iml" filepath="C:\Users\User\Documents\Android\Weight-Tracker-App\app\app.iml" />
     </modules>
   </component>
 </project>

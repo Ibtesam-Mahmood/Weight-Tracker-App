@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,14 +42,36 @@ public class MainActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
 
-        TextView newText =  new TextView(this);
-        newText.setText(currentText); //Sets the text to the inputted text
-        newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Sets the text size to 24 sp
-        newText.setGravity(Gravity.CENTER); //Centers the text
-        newText.setLayoutParams(params); //Sets the parameters for the text view
 
-        layout.addView(newText); //Adds the text t the layout
 
+        if(isNumeric(currentText)){
+            TextView newText =  new TextView(this);
+
+            newText.setText(currentText); //Sets the text to the inputted text
+            newText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24); //Sets the text size to 24 sp
+            newText.setGravity(Gravity.CENTER); //Centers the text
+            newText.setLayoutParams(params); //Sets the parameters for the text view
+
+            layout.addView(newText); //Adds the text t the layout
+        }
+        else{
+            Toast.makeText(this, "Not numeric", Toast.LENGTH_SHORT).show();
+        }
+
+
+    }
+
+    public boolean isNumeric(String str)
+    {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
     }
 
 
